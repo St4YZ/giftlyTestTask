@@ -1,10 +1,18 @@
 {
+  "name": "giftlytesttask",
+  "description": "",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:run" : "npx cypress run"
+  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "cypress": "^12.17.1",
     "cypress-mochawesome-reporter": "^3.5.1",
-    "prettier": "3.0.3"
-  },
-  "dependencies": {
+    "prettier": "3.0.3",
     "chai-sorted": "^0.2.0",
     "cypress-real-events": "^1.10.3"
   }

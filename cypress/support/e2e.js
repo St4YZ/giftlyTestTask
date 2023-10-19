@@ -1,4 +1,4 @@
-const GiftlyURL = Cypress.config('Giftly')
+const BASE_URL = Cypress.config('Giftly')
 import "cypress-real-events/support";
 // ***********************************************************
 // This example support/e2e.js is processed and
@@ -37,8 +37,8 @@ if (Cypress.config('hideXHR')) {
   }
 
   beforeEach(() => {
-    cy.visit(GiftlyURL);
-    cy.url().should('eq', `${GiftlyURL}`)
+    cy.visit(BASE_URL);
+    cy.url().should('eq', `${BASE_URL}`)
   })
 
   
